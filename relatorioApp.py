@@ -5,7 +5,7 @@ import base64
 
 # Funções para cada seção e subseção
 def apresentacao():
-    st.image("Assets/Images/apresetacao-1.png")
+    st.image("Assets/Images/apresetacao-1.png", use_column_width=True)
     st.markdown("""
     #### REITOR
     Prof. Custódio Luís Silva de Almeida
@@ -63,7 +63,8 @@ def gep():
             margin-left: auto;
             margin-right: auto;
             border-radius: 50%;
-            width: 180px;
+            max-width: 100%;
+            height: auto;
         }}
         </style>
         <img src="data:image/png;base64,{image_base64}" class="centered-img">
@@ -103,6 +104,8 @@ def gep():
             display: block;
             margin-left: auto;
             margin-right: auto;
+            max-width: 100%;
+            height: auto;
         }}
         </style>
         <img src="data:image/png;base64,{organograma_base64}" class="normal-img">
