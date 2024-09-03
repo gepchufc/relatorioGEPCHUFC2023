@@ -1482,7 +1482,7 @@ def infraestrutura():
         Além disso, a UGPESQ conta com um aparelho de ultrassonografia, uma balança de bioimpedância e um equipamento de densitometria óssea, localizados no Laboratório de Metabologia.
     """)
 
-    st.image("Assets/Images/infraestrutura1.jpg", caption='Infraestrutura e equipamentos da UGPESQ.")
+    st.image("Assets/Images/infraestrutura1.jpg", caption='Infraestrutura e equipamentos da UGPESQ.')
 
     st.markdown("""
         Em 2023, foram adquiridas uma impressora 3D e uma cama de tilt test, ampliando a infraestrutura oferecida aos pesquisadores. 
