@@ -489,11 +489,11 @@ def participacao_plano_diretor():
         2. Exemplos de matrizes de competências elaborados durante o projeto:
     """)
     st.image("Assets/Images/exMatrizCompt.jpg", caption='Matriz de competências da residência médica em clínica médica, segundo a resolução CNRM Nº 14 de 6 de julho de 2021')
-    st.image("Assets\Images\exMatrizCompet2.png", caption='Matriz de competência da residência médica em clínica médica do CH-UFC.')
+    st.image("Assets/Images/exMatrizCompet2.png", caption='Matriz de competência da residência médica em clínica médica do CH-UFC.')
     st.markdown("""
         3. Ferramenta de avaliação:
     """)
-    st.image("Assets\Images\ferramentaAvaliacao1.png", caption='Ferramenta de avaliação, MINI CEX, do programa de residência médica em ginecologia e obstetrícia da MEAC.')
+    st.image("Assets/Images/ferramentaAvaliacao1.png", caption='Ferramenta de avaliação, MINI CEX, do programa de residência médica em ginecologia e obstetrícia da MEAC.')
 
 def unidade_gestao_graduacao():
     st.header("Unidade de Gestão de Graduação, Ensino Técnico e Extensão")
