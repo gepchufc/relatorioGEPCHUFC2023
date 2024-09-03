@@ -49,8 +49,8 @@ def get_image_as_base64(image):
         return base64.b64encode(img_file.read()).decode()
 
 def gep():
-    image_path_renan = "Assets\Images\profRenan.png"
-    image_path_organograma = "Assets\Images\organograma2023relgestao.png"
+    image_path_renan = "Assets/Images/profRenan.png"
+    image_path_organograma = "Assets/Images/organograma2023relgestao.png"
 
     image_base64 = get_image_as_base64(image_path_renan)
     organograma_base64 = get_image_as_base64(image_path_organograma)
@@ -112,7 +112,7 @@ def gep():
     )
 
 def setor_gestao_ensino():
-    image_path_romulo = 'Assets\Images\romulo.png'
+    image_path_romulo = 'Assets/Images/romulo.png'
     image_base64_setor_ensino = get_image_as_base64(image_path_romulo)
 
     st.markdown(
@@ -188,7 +188,7 @@ def atividades_residencia_medica():
         """)
 
     # Carregar os dados do CSV
-    df_atividadeDeResMedica = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\Atividade_de_Residencia_Medica.csv')
+    df_atividadeDeResMedica = pd.read_csv("Assets/dataSets/Atividade_de_Residencia_Medica.csv")
 
     # Criar o gráfico interativo
     fig = go.Figure(data=[
@@ -220,7 +220,7 @@ def atividades_residencia_medica():
     """)
 
     # Carregar o dataframe de um arquivo csv:
-    df_programasResidencia = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\Programas_Residencia_Medica.csv')
+    df_programasResidencia = pd.read_csv("Assets/dataSets/Programas_Residencia_Medica.csv")
 
     # Filtros interativos
     hospitais = df_programasResidencia['Hospital'].unique()
@@ -239,7 +239,7 @@ def atividades_residencia_medica():
     st.dataframe(df_filtrado)
 
     # Gráfico referente às áreas de atuação da residência médica
-    df_areasAtuacaoResMedica = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\Areas_de_Atuacao.csv')
+    df_areasAtuacaoResMedica = pd.read_csv("Assets/dataSets/Areas_de_Atuacao.csv")
 
     # Filtros interativos
     hospitais2 = df_areasAtuacaoResMedica['Hospital'].unique()
@@ -278,7 +278,7 @@ def atividades_residencia_multiprofissional():
     """)
 
     # Carregar os dados do CSV
-    df_resMulti = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\vagasResMulti.csv')
+    df_resMulti = pd.read_csv("Assets/dataSets/vagasResMulti.csv")
 
     # Renomeando colunas
     df_resMulti.columns = ['Ano', 'Oferta de Vagas', 'Matrículas']
@@ -483,17 +483,17 @@ def participacao_plano_diretor():
         ##### Imagens:
         1. Capacitação pedagógica (elaboração das matrizes de competências e ferramentas de avaliação).               
     """)
-    st.image('C:/Users/assuero.meira/OneDrive - EBSERH/Documentos/GEP/RELATÓRIO DE GESTÃO GEP/relatorioDeGestao/Assets/Images/elabMatrizesCompet.jpg', caption='Equipes trabalhando na elaboração das matriz de competência da residência médica em ginecologia e obstetrícia.')
+    st.image("Assets/Images/elabMatrizesCompet.jpg", caption='Equipes trabalhando na elaboração das matriz de competência da residência médica em ginecologia e obstetrícia.')
 
     st.markdown("""
         2. Exemplos de matrizes de competências elaborados durante o projeto:
     """)
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\exMatrizCompt.jpg', caption='Matriz de competências da residência médica em clínica médica, segundo a resolução CNRM Nº 14 de 6 de julho de 2021')
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\exMatrizCompet2.png', caption='Matriz de competência da residência médica em clínica médica do CH-UFC.')
+    st.image("Assets/Images/exMatrizCompt.jpg", caption='Matriz de competências da residência médica em clínica médica, segundo a resolução CNRM Nº 14 de 6 de julho de 2021')
+    st.image("Assets\Images\exMatrizCompet2.png", caption='Matriz de competência da residência médica em clínica médica do CH-UFC.')
     st.markdown("""
         3. Ferramenta de avaliação:
     """)
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\ferramentaAvaliacao1.png', caption='Ferramenta de avaliação, MINI CEX, do programa de residência médica em ginecologia e obstetrícia da MEAC.')
+    st.image("Assets\Images\ferramentaAvaliacao1.png", caption='Ferramenta de avaliação, MINI CEX, do programa de residência médica em ginecologia e obstetrícia da MEAC.')
 
 def unidade_gestao_graduacao():
     st.header("Unidade de Gestão de Graduação, Ensino Técnico e Extensão")
