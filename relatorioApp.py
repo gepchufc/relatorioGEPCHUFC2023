@@ -126,7 +126,8 @@ def setor_gestao_ensino():
             margin-left: auto;
             margin-right: auto;
             border-radius: 50%;
-            width: 180px;
+            max-width: 100%;
+            height: auto;
         }}
         </style>
         <img src="data:image/png;base64,{image_base64_setor_ensino}" class="centered-img">
@@ -154,7 +155,6 @@ def setor_gestao_ensino():
         cursos, tanto presenciais como em formato híbrido (presencial e remoto), disponibilizados na plataforma 3EC, como piloto para formação 
         de preceptores e residentes, bem como realização de simulações realísticas. Portanto, as ações realizadas ao longo de 2023 visaram e 
         transfiguraram o alinhamento com a visão do CH-UFC/EBSERH de ser "a melhor sala de aula do norte e nordeste". 
-
     """)
 
 def unidade_gestao_pos_graduacao():
@@ -188,7 +188,7 @@ def atividades_residencia_medica():
         O aumento da oferta de vagas ao longo dos últimos dez anos (2013-2023), bem como seu respectivo preenchimento a cada ano e o aumento 
         permanente do número de residentes em atividade, demonstra o fortalecimento das atividades da modalidade de pós-graduação em questão no 
         Complexo Hospitalar da UFC, conforme gráfico abaixo.
-        """)
+    """)
 
     # Carregar os dados do CSV
     df_atividadeDeResMedica = pd.read_csv("Assets/dataSets/Atividade_de_Residencia_Medica.csv")
@@ -211,11 +211,14 @@ def atividades_residencia_medica():
         title='Número de Residentes Médicos com Atividade no Complexo Hospitalar da UFC/EBSERH (2013-2023)',
         xaxis_title='Ano',
         yaxis_title='Número de Residentes',
-        template='plotly_white'
+        template='plotly_white',
+        autosize=True,
+        width=None,
+        height=None,
     )
 
     # Mostrar o gráfico no Streamlit
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
     st.markdown("""
         Vale ressaltar a implementação das duas áreas com anos adicionais de atuação: Terceiro ano de residência em clínica médica (medicina 
@@ -238,8 +241,9 @@ def atividades_residencia_medica():
     
     # Título da tabela
     st.markdown("""###### Programas de residência médica no CH-UFC/Ebserh.""")
+    
     # Exibir o DataFrame formatado de forma interativa
-    st.dataframe(df_filtrado)
+    st.dataframe(df_filtrado, use_container_width=True)
 
     # Gráfico referente às áreas de atuação da residência médica
     df_areasAtuacaoResMedica = pd.read_csv("Assets/dataSets/Areas_de_Atuacao.csv")
@@ -257,9 +261,9 @@ def atividades_residencia_medica():
     
     # Título da tabela
     st.markdown("""###### Áreas de atuação da residência médica no CH-UFC/Ebserh.""")
-
+    
     # Exibir o DataFrame formatado de forma interativa
-    st.dataframe(df_filtrado2)
+    st.dataframe(df_filtrado2, use_container_width=True)
 
 def atividades_residencia_multiprofissional():
     st.header("Atividades de Residência Multiprofissional e Uniprofissional da Saúde")
