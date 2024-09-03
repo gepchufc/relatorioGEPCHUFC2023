@@ -513,7 +513,7 @@ def estagios_obrigatorios_graduacao_multiprofissional():
     """)
 
     # Carregar os dados do CSV
-    df_Est_mult = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\Estagios_Obrigatorios_Graduacao_Multiprofissional.csv')
+    df_Est_mult = pd.read_csv("Assets/dataSets/Estagios_Obrigatorios_Graduacao_Multiprofissional.csv')
 
     # Criar o gráfico interativo
     fig_est_mult = go.Figure(data=[
@@ -546,7 +546,7 @@ def estagios_obrigatorios_graduacao_multiprofissional():
     """)
 
     # Carregar os dados do CSV
-    df_estudantes = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\Estudantes_Multiprofissionais_IES.csv')
+    df_estudantes = pd.read_csv("Assets/dataSets/Estudantes_Multiprofissionais_IES.csv')
 
     # Criar o gráfico interativo
     fig_est_mult_IES = go.Figure()
@@ -612,7 +612,7 @@ def estagios_obrigatorios_graduacao_multiprofissional():
     """)
 
     # Gráfico Distribuição de estudantes multiprofissionais com atividades de graduação no HUWC e MEAC por Instituição de Ensino Superior de origem (2023).
-    df_novo_grafico = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\Estudantes_Multiprofissionais_HUWC_MEAC.csv')
+    df_novo_grafico = pd.read_csv("Assets/dataSets/Estudantes_Multiprofissionais_HUWC_MEAC.csv")
 
     fig_novo_grafico = go.Figure(data=[
         go.Bar(
@@ -645,7 +645,7 @@ def estagios_obrigatorios_graduacao_multiprofissional():
     st.plotly_chart(fig_novo_grafico)
 
     # Número de estudantes multiprofissionais com atividades de graduação no HUWC e MEAC por curso (2023).
-    df_est_mult_HUWC_MEAC_Cursos = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\Estudantes_Multiprofissionais_HUWC_MEAC_Cursos.csv')
+    df_est_mult_HUWC_MEAC_Cursos = pd.read_csv("Assets/dataSets/Estudantes_Multiprofissionais_HUWC_MEAC_Cursos.csv")
 
     fig_est_mult_HUWC_MEAC_Cursos = go.Figure(data=[
         go.Bar(
@@ -693,7 +693,7 @@ def estagios_obrigatorios_graduacao_medica():
     """)
 
     # Carregar os dados do CSV
-    df_estagios_medica = pd.read_csv('C:/Users/assuero.meira/OneDrive - EBSERH/Documentos/GEP/RELATÓRIO DE GESTÃO GEP/relatorioDeGestao/Assets/dataSets/Estagios_Obrigatorios_Graduacao_Medica.csv')
+    df_estagios_medica = pd.read_csv("Assets/dataSets/Estagios_Obrigatorios_Graduacao_Medica.csv")
 
     # Criar o gráfico interativo
     fig_estagios_medica = go.Figure(data=[
@@ -745,7 +745,7 @@ def estagios_obrigatorios_graduacao_medica():
     """)
 
     # Carregar os dados do CSV
-    df_internato_ies_origem = pd.read_csv('C:/Users/assuero.meira/OneDrive - EBSERH/Documentos/GEP/RELATÓRIO DE GESTÃO GEP/relatorioDeGestao/Assets/dataSets/Internato_Medico_IES_Origem.csv')
+    df_internato_ies_origem = pd.read_csv("Assets/dataSets/Internato_Medico_IES_Origem.csv")
 
     # Criar o gráfico interativo
     fig_internato_ies_origem = go.Figure(data=[
@@ -793,7 +793,7 @@ def estagios_nao_obrigatorios():
     """)
 
         # Carregar os dados do CSV
-    df_estagios_nao_obrigatorios = pd.read_csv('C:/Users/assuero.meira/OneDrive - EBSERH/Documentos/GEP/RELATÓRIO DE GESTÃO GEP/relatorioDeGestao/Assets/dataSets/Estagios_Nao_Obrigatorios.csv')
+    df_estagios_nao_obrigatorios = pd.read_csv("Assets/dataSets/Estagios_Nao_Obrigatorios.csv")
 
     # Criar o gráfico interativo
     fig_estagios_nao_obrigatorios = go.Figure(data=[
@@ -826,7 +826,7 @@ def estagios_nao_obrigatorios():
     """)
 
     # Carregar os dados do novo CSV para a segunda imagem
-    df_estagios_nao_obrigatorios_setor = pd.read_csv('C:/Users/assuero.meira/OneDrive - EBSERH/Documentos/GEP/RELATÓRIO DE GESTÃO GEP/relatorioDeGestao/Assets/dataSets/Estagios_Nao_Obrigatorios_Setor.csv')
+    df_estagios_nao_obrigatorios_setor = pd.read_csv("Assets/dataSets/Estagios_Nao_Obrigatorios_Setor.csv")
 
     # Criar o gráfico interativo
     fig_estagios_nao_obrigatorios_setor = go.Figure(data=[
@@ -880,11 +880,11 @@ def ensino_simulacao():
         de novos equipamentos e materiais para expandir o acervo de simulação, melhorando assim a capacidade de treinamento prático no CH-UFC.
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\simulacao1.jpg', caption='Leito de UTI do Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH (2023).')
+    st.image("Assets/Images/simulacao1.jpg", caption='Leito de UTI do Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH (2023).')
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\simulacao2.jpg', caption='Leito de Unidade Neonatal do Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH (2023).')
+    st.image("Assets/Images/simulacao2.jpg", caption='Leito de Unidade Neonatal do Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH (2023).')
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\simulacao3.jpg', caption='Leito de enfermaria do Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH (2023).')
+    st.image("Assets/Images/simulacao3.jpg", caption='Leito de enfermaria do Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH (2023).')
 
     st.markdown("""
         Equipado com simuladores de alta, média e baixa fidelidade, o Centro de Simulação tem possibilitado a realização de diferentes tipos de 
@@ -896,7 +896,7 @@ def ensino_simulacao():
         multiprofissionais. 
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\simulacao4.jpg', caption='Curso de primeiros socorros para terceirizados e assistentes administrativos do CH-UFC/Ebserh. Fortaleza, 2023.')
+    st.image("Assets/Images/simulacao4.jpg", caption='Curso de primeiros socorros para terceirizados e assistentes administrativos do CH-UFC/Ebserh. Fortaleza, 2023.')
 
     st.markdown("""
         Um curso de atualização em debriefing na modalidade in company foi oferecido a preceptores e docentes do Complexo, com o objetivo de 
@@ -904,7 +904,7 @@ def ensino_simulacao():
         acerca das diversas técnicas e estilos, adaptados às variadas necessidades do momento de debriefing.
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\simulacao5.jpg', caption='Curso de atualização em debriefing. Fortaleza, 2023.')
+    st.image("Assets/Images/simulacao5.jpg", caption='Curso de atualização em debriefing. Fortaleza, 2023.')
 
 def acervo():
     st.header("Acervo")
@@ -923,7 +923,7 @@ def acervo():
         venosas.
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\acervo1.jpg', caption='Torsos para treinamento de reanimação cardiorespiratória em suas versões neonatal, infantil e adulto disponíveis no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
+    st.image("Assets/Images/acervo1.jpg", caption='Torsos para treinamento de reanimação cardiorespiratória em suas versões neonatal, infantil e adulto disponíveis no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
 
     st.markdown("""
         Com maior possibilidade de deslocamento, esses são frequentemente empregados para realização de atividades in situ com colaboradores. 
@@ -946,11 +946,11 @@ def acervo():
         suturas em videocirurgia.
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\acervo2.jpg', caption='Caixas para simulação de cirurgias videolaparoscópicas no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
+    st.image("Assets/Images/acervo2.jpg", caption='Caixas para simulação de cirurgias videolaparoscópicas no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\acervo3.jpg', caption='Residentes utilizando simuladores para treinamento de cirurgias videolaparoscópica no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
+    st.image("Assets/Images/acervo3.jpg", caption='Residentes utilizando simuladores para treinamento de cirurgias videolaparoscópica no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\acervo4.jpg', caption='Simulação de alta fidelidade com residentes e preceptores no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
+    st.image("Assets/Images/acervo4.jpg", caption='Simulação de alta fidelidade com residentes e preceptores no Centro de Simulação / Laboratório de Habilidades do CH-UFC/EBSERH.')
 
 def inovacao():
     st.header("Inovação")
@@ -979,7 +979,7 @@ def inovacao():
         prática de procedimentos como cerclagem e bloqueio de nervo pudendo. 
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\inovacao1.jpg', caption='Modelo de tórax neonatal desenvolvido localmente por meio de impressão 3d e moulage para treinamento das técnicas de drenagem torácia neonatal (2023).')
+    st.image("Assets/Images/inovacao1.jpg", caption='Modelo de tórax neonatal desenvolvido localmente por meio de impressão 3d e moulage para treinamento das técnicas de drenagem torácia neonatal (2023).')
 
     st.markdown("""
         As peças inovadoras desenvolvidas no Centro irão integrar o acervo, propiciando realismo e diversificação aos treinamentos envolvendo 
@@ -1011,7 +1011,7 @@ def centro_simulacao():
     """)
 
     # Carregar os dados do CSV
-    df_simulacao = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\centro_simulacao.csv')
+    df_simulacao = pd.read_csv("Assets/dataSets/centro_simulacao.csv')
 
     # Criar o gráfico interativo
     fig_simulacao = go.Figure(data=go.Scatter(
@@ -1041,7 +1041,7 @@ def centro_simulacao():
     """)
 
       # Carregar os dados do CSV
-    df_simulacao = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\centro_simulacao_categoria.csv')
+    df_simulacao = pd.read_csv("Assets/dataSets/centro_simulacao_categoria.csv")
 
     # Criar o gráfico interativo
     fig_simulacao = go.Figure()
@@ -1106,7 +1106,7 @@ def unidade_apoio_ensino_pesquisa():
     """)
 
     # Carregar os dados do CSV
-    df_participantes = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\participantes_por_categoria.csv')
+    df_participantes = pd.read_csv("Assets/dataSets/participantes_por_categoria.csv")
 
     # Remover a linha do total
     df_participantes = df_participantes[df_participantes['Categoria'] != 'TOTAL']
@@ -1138,8 +1138,8 @@ def unidade_apoio_ensino_pesquisa():
     """)
 
     # Centralizar e exibir as imagens
-    st.image('C:/Users/assuero.meira/OneDrive - EBSERH/Documentos/GEP/RELATÓRIO DE GESTÃO GEP/relatorioDeGestao/Assets/Images/suporteAvancadoObst1.jpg', width=500, caption='Informativo do curso.')
-    st.image('C:/Users/assuero.meira/OneDrive - EBSERH/Documentos/GEP/RELATÓRIO DE GESTÃO GEP/relatorioDeGestao/Assets/Images/suporteAvancadoObst2.jpg', width=500, caption='Atividades realizados durante o curso.')
+    st.image("Assets/Images/suporteAvancadoObst1.jpg", width=500, caption='Informativo do curso.')
+    st.image("Assets/Images/suporteAvancadoObst2.jpg", width=500, caption='Atividades realizados durante o curso.')
 
     st.markdown("""
         Além deste curso a unidade promoveu uma capacitação para formação de bombeiros resgatistas, quanto a emergências obstétricas. 
@@ -1168,7 +1168,7 @@ def unidade_apoio_ensino_pesquisa():
     """)
 
     # Carregar os dados do CSV do gráfico de linha
-    df_ginecologia = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\ginecologia_obstetricia.csv')
+    df_ginecologia = pd.read_csv("Assets/dataSets/ginecologia_obstetricia.csv")
 
     # Criar o gráfico interativo de linha
     fig_ginecologia = go.Figure(data=go.Scatter(
@@ -1192,7 +1192,7 @@ def unidade_apoio_ensino_pesquisa():
     st.plotly_chart(fig_ginecologia)
 
 def gestao_pesquisa_inovacao():
-    image_path_taina = r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\taina.png'
+    image_path_taina = "Assets/Images/taina.png"
     image_base64_setor_inovacao = get_image_as_base64(image_path_taina)
 
     st.markdown(
@@ -1235,7 +1235,7 @@ def unidade_gestao_pesquisa():
     """)
 
      # Carregar os dados do CSV
-    df_pesquisas = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\pesquisas_academicas.csv')
+    df_pesquisas = pd.read_csv("Assets/dataSets/pesquisas_academicas.csv")
 
     # Criar o gráfico de barras
     fig_pesquisas = go.Figure(data=[
@@ -1271,7 +1271,7 @@ def unidade_gestao_pesquisa():
     """)
 
      # Carregar os dados do CSV de pesquisas clínicas
-    df_pesquisas_clinicas = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\pesquisas_clinicas.csv')
+    df_pesquisas_clinicas = pd.read_csv("Assets/dataSets/pesquisas_clinicas.csv")
 
     # Mostrar o DataFrame no Streamlit
     st.markdown("### Tabela de Pesquisas Clínicas com Fomento Externo")
@@ -1308,7 +1308,7 @@ def unidade_gestao_pesquisa():
     """)
 
     # Carregar os dados do CSV de pesquisas previstas para 2024
-    df_pesquisas_2024 = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\pesquisas_previstas_2024.csv')
+    df_pesquisas_2024 = pd.read_csv("Assets/dataSets/pesquisas_previstas_2024.csv")
 
     # Mostrar o DataFrame no Streamlit
     st.markdown("##### Tabela de Pesquisas Clínicas com Fomento Externo Previstas para 2024")
@@ -1334,7 +1334,7 @@ def unidade_gestao_pesquisa():
     """)
 
     # Carregar os dados do CSV de projetos avaliados
-    df_projetos_avaliados = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\projetos_avaliados.csv')
+    df_projetos_avaliados = pd.read_csv("Assets/dataSets/projetos_avaliados.csv")
 
     # Criar o gráfico de linhas
     fig_projetos_avaliados = go.Figure()
@@ -1388,7 +1388,7 @@ def apoio_pesquisador():
     """)
 
     # Carregar os dados do CSV
-    df_pesquisadores = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\quantitativo_pesquisadores.csv')
+    df_pesquisadores = pd.read_csv("Assets/dataSets/quantitativo_pesquisadores.csv")
 
     # Criar o gráfico de barras
     fig_pesquisadores = go.Figure(data=[
@@ -1416,7 +1416,7 @@ def apoio_pesquisador():
     """)
 
     # Carregar os dados do CSV dos atendimentos em 2023
-    df_atendimentos = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\atendimentos_nap_2023.csv')
+    df_atendimentos = pd.read_csv("Assets/dataSets/atendimentos_nap_2023.csv")
 
     # Criar o gráfico de barras
     fig_atendimentos = go.Figure(data=[
@@ -1482,7 +1482,7 @@ def infraestrutura():
         Além disso, a UGPESQ conta com um aparelho de ultrassonografia, uma balança de bioimpedância e um equipamento de densitometria óssea, localizados no Laboratório de Metabologia.
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\infraestrutura1.jpg', caption='Infraestrutura e equipamentos da UGPESQ.')
+    st.image("Assets/Images/infraestrutura1.jpg", caption='Infraestrutura e equipamentos da UGPESQ.")
 
     st.markdown("""
         Em 2023, foram adquiridas uma impressora 3D e uma cama de tilt test, ampliando a infraestrutura oferecida aos pesquisadores. 
@@ -1513,7 +1513,7 @@ def revista_medicina():
     """)
 
     # Carregar os dados do CSV
-    df_indicadores = pd.read_csv(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\dataSets\indicadores_revista_medicina.csv')
+    df_indicadores = pd.read_csv("Assets/dataSets/indicadores_revista_medicina.csv")
 
     # Criar o gráfico de linhas
     fig_indicadores = go.Figure()
@@ -1552,7 +1552,7 @@ def unidade_gestao_inovacao():
         que apoiem a decisão de incorporação. Colaborou com a elaboração do Guia Farmacoterapêutico do CH-UFC 2023-2024, conforme figura abaixo.
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\guiafarmacoterapeutico.jpg', caption='Guia Farmacoterapêutico do CH-UFC 2023/2024.')
+    st.image("Assets/Images/guiafarmacoterapeutico.jpg", caption='Guia Farmacoterapêutico do CH-UFC 2023/2024.')
 
     st.markdown("""
         Com o propósito de apoiar o desenvolvimento e implantação de Núcleos de Avaliação de Tecnologias em Saúde da rede Ebserh, a UGITS 
@@ -1563,7 +1563,7 @@ def unidade_gestao_inovacao():
         representante suplente da região Nordeste da Rede Brasileira de Avaliação de Tecnologias na Saúde (2024 – 2025).
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\guiafuncionamentoNATS.jpg', caption='Guia para organização e funcionamento dos núcleos de avaliação de tecnologias em saúde da rede Ebserh.')
+    st.image("Assets/Images/guiafuncionamentoNATS.jpg", caption='Guia para organização e funcionamento dos núcleos de avaliação de tecnologias em saúde da rede Ebserh.')
         
     st.markdown("""
         Como atividade de ensino, visando maior engajamento dos cursos na área da pesquisa e inovação e gerando a perspectiva da formação de 
@@ -1604,11 +1604,11 @@ def programas_iniciacao():
         e PIT.
     """)
 
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\PIT1.jpg', caption='Banner para divulgação do PIT 2023.')
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\PIC1.jpg', caption='Banner para divulgação do PIC 2023.')
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\encontroPIC.png', caption='Banner para divulgação do II Encontro do PIC (2023).')
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\encerramentoPIC.jpg', caption='Foto deste evento, com encerramento da primeira turma PIC (2022).')
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\PITePIC.jpg', caption='Banner para divulgação do III Encontro do PIC e II Encontro PIT (2023).')
+    st.image("Assets/Images/PIT1.jpg", caption='Banner para divulgação do PIT 2023.')
+    st.image("Assets/Images/PIC1.jpg", caption='Banner para divulgação do PIC 2023.')
+    st.image("Assets/Images/encontroPIC.png", caption='Banner para divulgação do II Encontro do PIC (2023).')
+    st.image("Assets/Images/encerramentoPIC.jpg", caption='Foto deste evento, com encerramento da primeira turma PIC (2022).')
+    st.image("Assets/Images/PITePIC.jpg", caption='Banner para divulgação do III Encontro do PIC e II Encontro PIT (2023).')
 
 
 def eventos():
@@ -1622,7 +1622,7 @@ def eventos():
 
         Em dezembro foi realizado o II PIT e III PIC e o II Congresso de Ensino, Pesquisa e Assistência do CH-UFC/EBSERH.
     """)
-    st.image(r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\congressoEnsinoPesquisa.jpg', caption='Folder de divulgação do II Congresso de Ensino, Pesquisa e Assistência do CH-UFC/EBSERH (2023).')
+    st.image("Assets/Images/congressoEnsinoPesquisa.jpg", caption='Folder de divulgação do II Congresso de Ensino, Pesquisa e Assistência do CH-UFC/EBSERH (2023).')
 
     st.markdown("""
         Além disso, foi organizado o II Simpósio de Pesquisa Clínica e Inovação Tecnológica, bem como o 3° minicurso de pesquisa científica, tendo 
