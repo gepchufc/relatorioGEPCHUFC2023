@@ -546,7 +546,7 @@ def estagios_obrigatorios_graduacao_multiprofissional():
     """)
 
     # Carregar os dados do CSV
-    df_estudantes = pd.read_csv("Assets/dataSets/Estudantes_Multiprofissionais_IES.csv')
+    df_estudantes = pd.read_csv("Assets/dataSets/Estudantes_Multiprofissionais_IES.csv")
 
     # Criar o gráfico interativo
     fig_est_mult_IES = go.Figure()
