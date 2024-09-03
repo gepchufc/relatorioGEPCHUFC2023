@@ -5,7 +5,7 @@ import base64
 
 # Funções para cada seção e subseção
 def apresentacao():
-    st.image("Assets\Images\apresetacao-1.png")
+    st.image("Assets/Images/apresetacao-1.png")
     st.markdown("""
     #### REITOR
     Prof. Custódio Luís Silva de Almeida
