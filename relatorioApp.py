@@ -1011,7 +1011,7 @@ def centro_simulacao():
     """)
 
     # Carregar os dados do CSV
-    df_simulacao = pd.read_csv("Assets/dataSets/centro_simulacao.csv')
+    df_simulacao = pd.read_csv("Assets/dataSets/centro_simulacao.csv")
 
     # Criar o gráfico interativo
     fig_simulacao = go.Figure(data=go.Scatter(
