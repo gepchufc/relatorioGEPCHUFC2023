@@ -5,7 +5,7 @@ import base64
 
 # Funções para cada seção e subseção
 def apresentacao():
-    st.image(r"C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\apresetacao-1.png")
+    st.image("Assets\Images\apresetacao-1.png")
     st.markdown("""
     #### REITOR
     Prof. Custódio Luís Silva de Almeida
@@ -49,8 +49,8 @@ def get_image_as_base64(image):
         return base64.b64encode(img_file.read()).decode()
 
 def gep():
-    image_path_renan = r"C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\profRenan.png"
-    image_path_organograma = r"C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\organograma2023relgestao.png"
+    image_path_renan = "Assets\Images\profRenan.png"
+    image_path_organograma = "Assets\Images\organograma2023relgestao.png"
 
     image_base64 = get_image_as_base64(image_path_renan)
     organograma_base64 = get_image_as_base64(image_path_organograma)
@@ -112,7 +112,7 @@ def gep():
     )
 
 def setor_gestao_ensino():
-    image_path_romulo = r'C:\Users\assuero.meira\OneDrive - EBSERH\Documentos\GEP\RELATÓRIO DE GESTÃO GEP\relatorioDeGestao\Assets\Images\romulo.png'
+    image_path_romulo = 'Assets\Images\romulo.png'
     image_base64_setor_ensino = get_image_as_base64(image_path_romulo)
 
     st.markdown(
